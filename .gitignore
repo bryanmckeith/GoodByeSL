@@ -1,0 +1,10 @@
+.idea
+.eggs
+.pytest*
+*.egg-info
+dist
+venv
+*.pyc
+__pycache__
+build
+config.personal.yml

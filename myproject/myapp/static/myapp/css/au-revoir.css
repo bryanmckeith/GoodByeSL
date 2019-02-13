@@ -1,0 +1,127 @@
+/* ____________________ CSS Document ____________________ */
+
+/* ==================== For All ==================== */
+
+body {
+    height: 100%;
+    background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
+    color: #E00034;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    padding-right: 205px;
+    margin: 7% auto 0;
+    max-width: 390px;
+    min-height: 180px;
+    background-position-x: 56%;
+    background-position-y: 140px;
+}
+
+#af-error-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+img#logo-sl {
+    height: 67px;
+    width: 161px;
+    margin: 30px 0 0 0;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    margin: 11px 18px 22px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+ins {
+    width: 4px;
+}
+
+text {
+    color: #777;
+    text-decoration: none;
+}
+
+a {
+    color: #222;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+#indice {
+    color: white;
+}
+
+#dumb {
+    color: #e00034;
+}
+
+.op-tvpin {
+    position: absolute;
+    top: 170px;
+    left: 0%;
+    margin: 0 0 0 -200px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #e00034;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    z-index: 3000;
+ 
+    -webkit-animation: op-tvpin 0.5s forwards;
+    animation: op-tvpin 0.5s forwards;
+    -webkit-animation-delay: 200s;
+    animation-delay: 200s;
+}
+
+.op-tvpin span {
+    display: block;
+    padding: 30px 15px 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@-webkit-keyframes op-tvpin {
+    100% { left: 600px; }
+}
+
+@keyframes op-tvpin {
+    100% { left: 600px; }
+}
+
+.fi-chevron-up {
+    -webkit-animation: 2s linear k-hwobble-inf 3s;
+    animation: 2s linear k-hwobble-inf 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.fi-chevron-up::before {
+    content: "^";
+    font-family: font-icon !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    margin-right: 6px;
+    line-height: 1;
+    text-transform: none;
+    vertical-align: text-bottom;
+}
+
+@keyframes k-hwobble-inf {
+    10% { transform: translateY(6px); }
+    20% { transform: translateY(-5px); }
+    30% { transform: translateY(4px); }
+    40% { transform: translateY(-2px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(0px); }
+}

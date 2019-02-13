@@ -1,0 +1,1165 @@
+/* ____________________ CSS Document ____________________ */
+
+/* ==================== For All ==================== */
+
+body {
+    height: 100%;
+    background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
+    color: #E00034;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    min-height: 180px;
+    background-position-x: 56%;
+    background-position-y: 218px;
+}
+
+.wrapper {
+    padding-right: 205px;
+    margin: 7% auto 0;
+    max-width: 390px;
+}
+
+#af-error-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+img#logo-sl {
+    height: 67px;
+    width: 161px;
+    margin: 30px 0 0 0;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    margin: 11px 18px 22px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+ins {
+    width: 4px;
+}
+
+text {
+    color: #777;
+    text-decoration: none;
+}
+
+a {
+    color: #222;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+#indice {
+    color: white;
+}
+
+#dumb {
+    color: #e00034;
+}
+
+.op-tvpin {
+    position: absolute;
+    top: 245px;
+    left: 0%;
+    margin: 0 0 0 -200px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #e00034;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    z-index: 3000;
+ 
+    -webkit-animation: op-tvpin 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: op-tvpin 0.5s forwards;
+    animation-delay: 2s;
+}
+
+.op-tvpin span {
+    display: block;
+    padding: 24px 15px 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@-webkit-keyframes op-tvpin {
+    100% { left: 600px; }
+}
+
+@keyframes op-tvpin {
+    100% { left: 600px; }
+}
+
+.fi-chevron-up {
+    animation: 2s linear k-hwobble-inf 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation: 2s linear k-hwobble-inf 3s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.fi-chevron-up::before {
+    content: "^";
+    font-family: font-icon !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    margin-right: 6px;
+    line-height: 1;
+    text-transform: none;
+    vertical-align: text-bottom;
+}
+
+@keyframes k-hwobble-inf {
+    10% { transform: translateY(6px); }
+    20% { transform: translateY(-5px); }
+    30% { transform: translateY(4px); }
+    40% { transform: translateY(-2px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(0px); }
+}
+
+#favoris {
+    top: 6px;
+    position: absolute;
+    right: 225px;
+}
+
+/* ------ Copier - Coller bien dégueulasse de SeLoger directement*/
+
+/**
+ * Composant c-head
+ **************************************************
+ * @desc header du site
+ *
+ */
+
+ .c-head-hidden {
+    top: -100px;
+  }
+  
+  .c-head-browser {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 1px 0;
+    color: #262626;
+    font-size: 14px;
+    text-align: left;
+    background: rgb(230, 233, 237);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    z-index: 2147483647;
+  }
+  
+  .c-head-browser p {
+    padding: 5px 0;
+  }
+  
+  .c-head-browser.hide {
+    display: none;
+  }
+  
+  .c-head-browser .b-btn {
+    font-size: 12px;
+    cursor: pointer;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: medium none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+  
+  .c-head-browser .b-btn:hover {
+    text-decoration: none;
+  }
+  
+  .c-head-browser .b-btn.link-browser.hide {
+    display: none;
+  }
+  
+  .chrome .c-head-browser .b-btn.link-browser.chrome {
+    display: inline-block;
+  }
+  
+  .firefox .c-head-browser .b-btn.link-browser.firefox {
+    display: inline-block;
+  }
+  
+  .safari .c-head-browser .b-btn.link-browser.safari {
+    display: inline-block;
+  }
+  
+  .opera .c-head-browser .b-btn.link-browser.opera {
+    display: inline-block;
+  }
+  
+  .ie .c-head-browser .b-btn.link-browser.ie {
+    display: inline-block;
+  }
+  
+  #banner_cookie>div>div>p>i {
+    padding: 15px;
+    margin-top: -14px;
+  }
+  
+  .c-head-browse {
+    background: #e00034;
+    position: relative;
+    text-align: center;
+    z-index: 800;
+  }
+  
+  /** keyframes to refacto **/
+  
+  .h-ic-pulse:hover .fi {
+    animation: 1s linear infinite k-pulse;
+  }
+  
+  @keyframes k-pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.3);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.3);
+    }
+  
+    75% {
+      transform: scale(1);
+    }
+  }
+  
+  @media screen and (max-width:1024px) {
+    #i-hsub-emmenager .g-btn {
+      padding: 40px 0;
+      padding-left: 20px;
+    }
+  }
+  
+  @media screen and (max-width:767px) {
+    #i-hsub-emmenager .g-btn {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    #i-head-nav a {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  
+    #i-hsub-louer-m.is-visible {
+      position: absolute;
+      top: 0;
+      width: 101%;
+    }
+  
+    #i-hsub-construire-m.is-visible {
+      position: absolute;
+      top: 0;
+      width: 101%;
+    }
+  
+    #i-hsub-emmenager-m.is-visible {
+      position: absolute;
+      top: 0;
+      width: 101%;
+    }
+  
+    #i-hsub-emprunter-m.is-visible {
+      position: absolute;
+      top: 0;
+      width: 101%;
+    }
+  
+    #i-hsub-vendre-m.is-visible {
+      position: absolute;
+      top: 0;
+      width: 101%;
+    }
+  
+    .c-ti {
+      padding: 0;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+  }
+  
+  /**
+   * Composant c-ul
+   **************************************************
+   * @desc list non ordonnées
+   *
+   */
+  
+  .ul-dry {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ul-dry li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .p-home .ul-cats,
+  .p-home .ul-cats-s {
+    padding: 0 0 15px 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .ul-cats li,
+  .ul-cats-s li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .ul-cats li a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: all .2s ease;
+  }
+  
+  .ul-cats-s li a {
+    display: block;
+    font-size: 16px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #333;
+    transition: all .2s ease;
+  }
+  
+  .ul-cats li a:hover,
+  .ul-cats-s li a:hover {
+    color: #c5071b;
+  }
+  
+  .c-ti {
+    padding: 7px 0 5px 0;
+    margin: 0 0 8px 0;
+    color: #666;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+  }
+  .c-main-list .c-flap-menu .c-flap-list .c-red-button-wrapper {
+    border: 1px solid #ff3c54;
+    border-radius: 24px;
+    color: #ff3c54;
+   
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px 10px;
+  }
+  
+  .c-main-list .c-flap-menu .c-flap-list li + li .c-red-button-wrapper {
+    margin-top: 6px;
+  }
+  
+  .c-main-list .c-flap-menu .c-flap-list .c-red-button-wrapper:hover {
+    color: white;
+    background-color: #e00034;
+    border-color: #e00034;
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .c-main-list .c-flap-menu .c-close-flap-element,
+    .c-close-flap-icon,
+    .c-close-flap-element,
+    .c-header-list-container .c-flap-menu .c-flap-category-title-mobile {
+      display: none;
+    }
+  
+    .c-header-list {
+      padding-left: 130px;
+    }
+  
+    .c-main-list .c-flap-menu {
+      background: #f5f7fa;
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+      color: black;
+      left: 0;
+      max-height: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 100%;
+      -webkit-transition: max-height, 0.2s ease-in-out;
+      -moz-transition: max-height, 0.2s ease-in-out;
+      -ms-transition: max-height, 0.2s ease-in-out;
+      -o-transition: max-height, 0.2s ease-in-out;
+      transition: max-height, 0.2s ease-in-out;
+      transition-delay: 0s;
+      width: 100%;
+    }
+  
+    .c-main-list:hover .c-flap-menu {
+      max-height: 500px;
+      transition-delay: .3s;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-content-wrapper {
+      max-width: 1024px;
+      position: relative;
+      text-align: left;
+      width: 100%;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-list {
+      box-sizing: border-box;
+      color: #666;
+      display: inline-block;
+      font-weight: bold;
+      margin-top: 0;
+      padding: 20px 35px;
+      text-align: left;
+      vertical-align: top;
+      width: 33%;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-list > ul {
+      list-style-type: none;
+      text-align: left;
+      padding: 0;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-list .c-flap-title {
+      font-size: 16px;
+      line-height: 1em;
+      padding-bottom: 16px;
+      min-height: 16px;
+      box-sizing: content-box;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-list a {
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1em;
+      padding: 4px 0;
+      display: inline-block;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-list a:hover {
+      color: #e00934;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .c-flap-menu {
+      display: none;
+    }
+  
+    input[type="radio"]:checked + .c-flap-menu {
+      background: #f5f7fa;
+      bottom: 0;
+      display: block;
+      left: 0;
+      padding: 12px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 200;
+    }
+  
+    .first-flap-list,
+    .second-flap-list,
+    .third-flap-list {
+      padding: 10px;
+    }
+  
+    .c-flap-menu ul {
+      margin: 0;
+      font-size: 14px;
+      list-style-type: none;
+    }
+  
+    .c-flap-menu li {
+      padding-left: 10px;
+      font-size: 16px;
+    }
+  
+    .c-flap-menu a {
+      color: #333;
+      text-decoration: none;
+    }
+  
+    .c-flap-menu a:hover {
+      color: rgb(197, 7, 27);
+    }
+  
+    a:hover + .c-flap-menu {
+      position: absolute;
+      display: block;
+      background: #f5f7fa;
+      box-shadow: 0 0 7px 1px rgba(0, 0, 0, .4);
+      transition: all .3s ease-in-out;
+      width: 100%;
+      color: black;
+    }
+  
+    .c-main-list .c-flap-menu .c-close-flap-element {
+      display: none;
+    }
+  
+    .c-close-flap-icon,
+    .c-menu-icon-open {
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+  
+    .c-close-flap-icon {
+      display: block;
+      font-size: 12px;
+    }
+  
+    .c-close-flap-icon span {
+      line-height: 1em;
+      vertical-align: middle;
+    }
+  
+    .c-close-flap-icon svg {
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+  
+    .c-menu-icon-open {
+      float: right;
+      height: 38px;
+      line-height: 38px;
+      position: relative;
+      text-align: center;
+      width: 40px;
+      z-index: 2;
+    }
+  
+    .c-flap-menu .c-flap-title {
+      color: #aab2bd;
+      font-weight: 700;
+      line-height: inherit;
+      transition: all .2s ease-in-out;
+      display: block;
+      padding: 15px 40px 10px 10px;
+      font-size: 15px;
+    }
+  
+    .c-flap-menu .c-flap-category-title-mobile {
+      color: #262626;
+    }
+  
+    .c-flap-menu .c-flap-title:empty {
+      padding: 0;
+    }
+  
+    .c-flap-menu .c-flap-list > div:first-child .c-flap-title {
+      padding-top: 0;
+    }
+  
+    .c-flap-menu .c-flap-title + .c-flap-list {
+      padding-top: 0;
+    }
+  
+    .c-flap-menu .c-flap-list ul {
+      padding: 0;
+    }
+  
+    .c-main-list .c-flap-menu .c-flap-list .c-red-button-wrapper {
+      margin-top: 6px;
+    }
+  
+    .c-deposit-button {
+      text-align: center;
+      padding: 20px 0 9px 0;
+      color: #262626;
+    }
+  
+    .c-deposit-button-flap {
+      padding-bottom: 20px;
+    }
+  
+    .c-deposit-button-flap a {
+      display: block;
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+  
+    .c-deposit-button-flap a svg:nth-of-type(1) {
+      margin-right: 5px;
+      vertical-align: bottom;
+    }
+  
+    .c-deposit-button-flap a svg:nth-of-type(2) {
+      display: none;
+    }
+  
+    .toogle-section {
+      visibility: visible;
+      display: inline-block;
+      height: 38px;
+      width: 50px;
+      margin-left: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      line-height: 35px;
+      border-left: 2px solid #373737;
+    }
+  
+    .c-menu-radio-list {
+      display: none;
+    }
+  
+    .fa-home {
+      margin-right: 5px;
+    }
+  }
+  
+  .headersl {
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    color: #262626;
+    font-family: 'source-sans-pro', 'Source Sans Pro', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    height: 70px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 10003;
+  }
+  
+  .c-header-container {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    height: 70px;
+  }
+  
+  .c-head {
+    height: 100%;
+  }
+  
+  .c-head-logo {
+    display: inline-block;
+    height: 100%;
+  }
+  
+  .c-head-logo a {
+    box-sizing: content-box;
+    display: inline-block;
+    position: relative;
+    width: 93px;
+    height: 22px;
+    padding: 24px;
+    padding-right: 12px;
+    z-index: 2;
+  }
+  
+  .c-head-logo a svg {
+    position: absolute;
+    background: #fff;
+    fill: #E00034;
+  }
+  
+  .c-head-logo a span {
+    display: inline-block;
+  }
+  
+  .c-header-container .kit-modules-wrapper {
+    height: 100%;
+    position: absolute;
+    right: 210px;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .c-header-container .kit-modules-wrapper>div {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  
+  .c-header-menu {
+    height: 100%;
+  }
+  
+  .c-header-list {
+    margin: 0;
+    position: relative;
+  }
+  
+  .c-header-module-opener-text {
+    color: #262626;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .c-header-module-opener-content {
+    height: 40px;
+    padding: 0 12px;
+  }
+  
+  .c-header-module-opener-content:after {
+    content: "";
+    display: block;
+    height: 40px;
+    border-right: 1px solid #ccd1d9;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+  }
+  
+  /***************************/
+  
+  /* AFFICHAGE MENU DESKTOP */
+  
+  /*************************/
+  
+  @media screen and (min-width: 1025px) {
+    .c-header-list-container .c-menu-icon-checkbox,
+    .c-header-list-container .c-menu-icon-open,
+    .c-header-list-container .c-menu-radio-list,
+    .headersl .c-menu-icon-checkbox,
+    .c-header-list-container .c-main-link .c-menu-radio-list,
+    .c-icon-close-menu,
+    .c-icon-open-menu {
+      display: none;
+    }
+  
+    .c-header-list-container {
+      list-style-type: none;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .c-header-list-container .c-main-list {
+      display: inline-block;
+      font-size: 16px;
+    }
+  
+    .c-header-list-container .c-main-list .c-main-link {
+      color: #262626;
+      display: inline-block;
+      height: 70px;
+      line-height: 70px;
+      padding: 0 8px;
+      text-decoration: none;
+      position: relative;
+    }
+  
+    .c-header-list-container .c-main-list:hover .c-main-link {
+      text-shadow: 1px 0 0 #262626;
+    }
+  
+    .c-header-list-container .c-main-list .c-main-link:hover {
+      cursor: pointer;
+    }
+  
+    .c-header-list-container .c-main-list:hover .c-main-link:before {
+      margin-left: -8px;
+      border-width: 8px;
+    }
+  
+    .c-deposit-wrapper {
+      border: 1px solid #e00034;
+      background-color: white;
+      border-radius: 22px;
+      color: black;
+      display: inline-table;
+      font-size: 14px;
+      margin-top: -21px;
+      right: 24px;
+      position: absolute;
+      top: 50%;
+      text-align: left;
+      transition: background-color 0s, border-color 0s;
+      transition-delay: .2s;
+    }
+  
+    .c-deposit-button {
+      padding: 0;
+      white-space: nowrap;
+    }
+  
+    .c-deposit-button a {
+      font-weight: 400;
+    }
+  
+    .c-deposit-button svg {
+      margin-right: 5px;
+      vertical-align: bottom;
+    }
+  
+    .c-deposit-label {
+      color: #e00034;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+      padding: 9px 12px;
+      text-decoration: none;
+      transition: color 0s;
+      transition-delay: .2s;
+    }
+  
+    .c-deposit-button-flap {
+      position: relative;
+      background-color: white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      max-height: 0;
+      overflow: hidden;
+      text-align: left;
+      -webkit-transition: max-height, 0.2s ease-in-out;
+      -moz-transition: max-height, 0.2s ease-in-out;
+      -ms-transition: max-height, 0.2s ease-in-out;
+      -o-transition: max-height, 0.2s ease-in-out;
+      transition: max-height, 0.2s ease-in-out;
+    }
+  
+    .c-deposit-button-flap a {
+      color: black;
+      display: block;
+      text-decoration: none;
+      padding: 3px 12px;
+      font-size: 14px;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .c-deposit-button-flap p {
+      font-weight: 700;
+      padding: 5px 12px 3px 12px;
+      margin: 0;
+    }
+  
+    .c-deposit-button-flap a:hover {
+      color: #e00934;
+    }
+  
+    .c-deposit-button-flap a svg:nth-of-type(1) {
+      display: none;
+    }
+  
+    .c-deposit-button-flap a svg:nth-of-type(2) {
+      fill: black;
+      margin-top: -7px;
+      /* moitié de la hauteur du svg */
+      position: absolute;
+      right: 14px;
+      /* attention, le svg est mal fait. avec des zones transparente sur les côtés qui augmentent sa taille */
+      top: 50%;
+    }
+  
+    .c-deposit-button-flap a:hover svg:nth-of-type(2) {
+      fill: #e00934;
+    }
+  
+    .c-deposit-wrapper:hover {
+      background: #f5f7fa;
+      border-color: #f5f7fa;
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: none;
+    }
+  
+    .c-deposit-wrapper:hover .c-deposit-button-flap {
+      background: #f5f7fa;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      max-height: 500px;
+      padding-bottom: 12px;
+      position: relative;
+    }
+  
+    .c-deposit-wrapper:hover .c-deposit-label {
+      color: #262626;
+      transition: none;
+    }
+  
+    .c-deposit-wrapper .c-deposit-button-flap {
+      width: 100%;
+    }
+  
+    .c-deposit-button-flap:hover {
+      max-height: 500px;
+    }
+  
+    .c-header-hamburger-icon {
+      vertical-align: bottom;
+      position: relative;
+    }
+  }
+  
+  /***************************/
+  
+  /* AFFICHAGE MENU MOBILE */
+  
+  /*************************/
+  
+  @media screen and (max-width: 1025px) {
+    .headersl {
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  
+    .c-header-container {
+      background-color: #fff;
+      top: 0;
+      width: 100%;
+    }
+  
+    .headersl input.c-menu-icon-checkbox {
+      display: none;
+    }
+  
+    .c-icon-close-menu {
+      font-size: 14px;
+    }
+  
+    .c-header-list-container {
+      background: #f5f7fa;
+      bottom: 0;
+      margin: 0;
+      list-style-type: none;
+      padding: 0 12px 50px;
+      position: fixed;
+      overflow-y: auto;
+      width: 100%;
+      -webkit-font-smoothing: antialiased;
+      top: 70px;
+      transform-origin: 0 0;
+      transform: translate(100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+      z-index: 3;
+    }
+  
+    .c-header-list {
+      padding: 0;
+    }
+  
+    .c-header-list-container li.c-main-list {
+      display: block;
+      border-bottom: 1px solid #ccd1d9;
+    }
+  
+    .c-main-link-block {
+      display: inline-block;
+      width: 100%;
+      padding-right: 40px;
+      margin-right: -40px;
+      box-sizing: border-box;
+    }
+  
+    .c-header-list-container li a.c-main-link {
+      box-sizing: border-box;
+      color: #262626;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1em;
+      padding: 12px 0;
+      text-decoration: none;
+      width: 100%;
+    }
+  
+    .c-icon-open-menu .c-icon-menu {
+      height: 40px;
+    }
+  
+    .c-icon-close-menu .c-icon-menu {
+      height: 20px;
+    }
+  
+    .c-header-hamburger-wrapper {
+      height: 18px;
+    }
+  
+    .c-header-module-opener-text,
+    .c-header-hamburger-text {
+      line-height: 12px;
+    }
+  
+    .c-header-hamburger-text {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked {
+      width: 82px;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-list-container {
+      transform: none;
+    }
+  
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener {
+      bottom: 0;
+      height: 70px;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      z-index: 2;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-container,
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-opener {
+      background-color: #fff;
+      box-shadow: inset 0 -8px 11px -8px rgba(0,0,0,0.4);
+      position: fixed;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-container {
+      left: 0;
+      right: 50px;
+      width: auto;
+      z-index: 3;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-container .kit-modules-wrapper {
+      right: 0;
+    }
+  
+    /* Hide icon menu */
+  
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener .c-icon-open-menu,
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener .c-icon-close-menu {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: table-cell;
+      height: 70px;
+      vertical-align: middle;
+      width: 50px;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-opener .c-icon-open-menu {
+      display: none;
+    }
+  
+    .headersl input.c-menu-icon-checkbox:checked ~ .c-header-opener .c-icon-close-menu {
+      display: table-cell;
+    }
+  
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener .c-icon-close-menu {
+      display: none;
+    }
+  
+    .c-deposit-button svg {
+      display: none;
+    }
+  
+    .c-deposit-button {
+      text-align: left;
+      padding-left: 9px;
+    }
+  
+    .c-deposit-label {
+      color: #262626;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      padding-left: 5px;
+    }
+  
+    .c-deposit-button-flap a {
+      color: #262626;
+      text-decoration: none;
+    }
+  
+    .c-deposit-button-flap p {
+      display: none;
+    }
+  
+    .c-header-container .kit-modules-wrapper {
+      right: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .headersl {
+      height: 44px;
+    }
+  
+    .c-header-container {
+      height: 44px;
+    }
+  
+    .c-head-logo a {
+      padding: 11px 12px;
+    }
+  
+    .c-header-list-container {
+      top: 44px;
+    }
+  
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener {
+      height: 44px;
+    }
+  
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener .c-icon-open-menu,
+    .headersl input.c-menu-icon-checkbox ~ .c-header-opener .c-icon-close-menu {
+      height: 44px;
+      line-height: 44px;
+    }
+  
+    .c-header-hamburger-text {
+      display: none;
+    }
+  
+    .c-header-container .kit-modules-wrapper {
+      bottom: 10px;
+    }
+  
+    .c-header-module-opener-content,
+    .c-icon-close-menu .c-icon-menu {
+      height: auto;
+    }
+  
+    .c-header-module-opener-content:after {
+      height: 18px;
+      margin-top: -9px;
+    }
+  
+    .c-header-hamburger-wrapper,
+    .c-icon-open-menu .c-icon-menu {
+      height: auto;
+    }
+  }

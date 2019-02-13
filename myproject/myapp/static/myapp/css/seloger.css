@@ -1,0 +1,58 @@
+/* ____________________ CSS Document ____________________ */
+
+/* ==================== For All ==================== */
+
+body {
+    height: 100%;
+    background: url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;
+    color: #E00034;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    padding-right: 205px;
+    margin: 7% auto 0;
+    max-width: 390px;
+    min-height: 180px;
+    background-position-x: 56%;
+    background-position-y: 140px;
+}
+
+#af-error-container {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+img#logo-sl {
+    height: 67px;
+    width: 161px;
+    margin: 30px 0 0 0;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    margin: 11px 18px 22px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+ins {
+    width: 4px;
+}
+
+text {
+    color: #777;
+    text-decoration: none;
+}
+
+a {
+    color: #222;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+#indice {
+    color: white;
+}

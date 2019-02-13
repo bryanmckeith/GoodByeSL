@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+    <head>
+
+        <title>404</title>
+
+        {% load static %}
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/seloger.css' %}" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <div id="af-error-container">
+            <img id="logo-sl" src="{% static 'myapp/img/logo-sl.png' %}" href="//wwww.seloger.com" alt="logo-sl">
+            <p>
+                <b>404.</b>
+                <ins></ins>
+                <text>Visiblement tu t'es perdu...</text>
+            </p>
+            <a>Reviens en arrière !</a>
+            <div id="indice">
+                Non non, pour de vrai, là c'est une impasse...
+                Tu as du taper une fausse URL
+                Reviens en arrière on te dit !
+            </div>
+        </div>
+
+    </body>
+</html>

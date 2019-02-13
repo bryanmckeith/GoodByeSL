@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+    <head>
+
+        <title>SeLoger: au revoir</title>
+
+        {% load static %}
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/au-revoir.css' %}" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <div class="op-tvpin">
+                <span>Essaie avec</span>
+                <div id="dumb">myapp/bravo.html</div>
+                <img id="slide" src="{% static 'myapp/img/slide.png' %}" />
+                <i class="fi-chevron-up"></i>
+            </div>
+
+            <div id="af-error-container">
+                <img id="logo-sl" src="{% static 'myapp/img/logo-sl.png' %}" href="//wwww.seloger.com" alt="logo-sl">
+                <p>
+                    <b>408.</b>
+                    <ins></ins>
+                    <text>Request time-out</text>
+                </p>
+                <a>Il va falloir être patient(e) ...</a>
+    
+                <div id="indice">
+                    Ah, t'as cru qu'on faisait deux fois la même chose ici...
+                    200s c'est vraiment trop long ...
+                </div>
+            </div>
+    
+
+        </div>
+
+    </body>
+</html>
