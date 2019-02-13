@@ -16,11 +16,11 @@ GoodBye SL is a "one shot" app that I developed "as it is" :)
 
 ### Screenshots
 
-![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/step1-screenshot.png)
-![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/step2-screenshot.png)
-![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/step3-screenshot.png)
-![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/step4-screenshot.png)
-![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/step5-screenshot.png)
+![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/Step1-screenshot.png)
+![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/Step2-screenshot.png)
+![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/Step3-screenshot.png)
+![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/Step4-screenshot.png)
+![alt text](https://github.com/bryanmckeith/GoodByeSL/blob/master/Step5-screenshot.png)
 
 ## Contributing
 
